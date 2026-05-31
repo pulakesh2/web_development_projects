@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #e8e8e8;
+}
+.container {
+  width: 350px;
+  margin: 20px auto;
+}
+header,
+article,
+aside {
+  text-align: center;
+  background-color: #fff;
+}
+input,
+.login {
+  display: block;
+  height: 30px;
+  margin-bottom: 6px;
+  width: 80%;
+  margin-left: 30px;
+}
+hr,
+.or {
+  display: inline-block;
+  color: #777;
+  font-size: 14px;
+  font-weight: 600;
+}
+.login {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 149, 246);
+  color: white;
+  border: 0;
+  border-radius: 4%;
+  font-weight: 600;
+}
+hr {
+  width: 42%;
+}
+article h3 {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: rgb(56, 81, 133);
+  cursor: pointer;
+}
+.frgt {
+  font-size: 12px;
+  color: rgb(0, 55, 107);
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+header {
+  margin-bottom: 10px;
+}
+header,
+aside {
+  border: 1px solid #777;
+}
+aside {
+  padding: 20px 25px;
+  font-size: 14px;
+}
+aside p {
+  display: inline-block;
+}
+.btnsignup {
+  color: rgb(0, 149, 246);
+  border: 0;
+  background-color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+input {
+  padding: 5px 6px;
+  height: 25px;
+  width: 76%;
+  background-color: #e8e8e8;
+  border: 0.5px solid #999;
+}
+footer p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.imgdiv {
+  text-align: center;
+  position: relative;
+}
+.img1,
+.img2 {
+  position: absolute;
+}
+.img1 {
+  left: 15px;
+  top: 25px;
+}
+.img2 {
+  right: 5px;
+  top: 15px;
+}
+
+nav {
+  margin-top: 140px;
+  text-align: center;
+}
+nav a {
+  margin-right: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #777;
+  cursor: pointer;
+}
+body footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    margin: 5px auto;
+  }
+  nav {
+    margin: 80px auto;
+    margin-bottom: 40px;
+  }
+}
