@@ -1,0 +1,36 @@
+
+install it-->
+	npm create vite@latest
+
+then choose what project you want to build-->
+	choose React then React + Js or React + ts
+
+
+open project-->
+	1. npm install
+	2. npm run dev
+
+
+install Tailwind Css-->
+	step 1. npm install -D tailwindcss ( in our terminal )
+	step 2. in tailwind.config.js file we paste
+			module.exports = {
+  				content: ["./src/**/*.{html,js}"],
+ 				 theme: {
+    					extend: {},
+  				},
+ 				 plugins: [],
+			}
+
+	step 3. in input.css file paste
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+
+
+install plugins or UI in our app-->
+
+	step 1. npm i -D daisyui@latest ( in our terminal to install )
+	step 2. in tailwind.config.js file paste-->
+		import daisyui from "daisyui";	
+		plugins: [daisyui], ( overwrite the plugins )

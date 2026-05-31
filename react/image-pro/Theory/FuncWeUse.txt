@@ -1,0 +1,12 @@
+
+
+read and get data from firebase storage-->
+geting data we use --> getData ( see in firebase docs ) useFirestore.ts
+upload the file --> startUpload ( see in fireBase docs ) useStorage.ts
+
+
+Authentication for user-->
+store the user profile -->  createUserWithEmailAndPassword(auth, email, password) ( see in fireBase docs ) SignUp.tsx
+get the user profile --> onAuthStateChanged(auth, (user) =>{}) ( see in fireBase docs ) Auth.tsx
+signOut the user --> signOut(auth) ( see in fireBase docs ) Navbar.tsx
+
