@@ -1,0 +1,27 @@
+.image-money-box-footer {
+  overflow: hidden;
+}
+
+.image-money-footer {
+  width: 100%;
+  transition: all 0.4s;
+}
+.image-money-footer:hover {
+  transform: scale(1.2);
+}
+.money-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  background-color: #00baf2;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.money-card-para {
+  margin-bottom: 2rem;
+  color: #fff;
+}

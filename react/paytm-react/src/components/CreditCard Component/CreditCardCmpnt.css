@@ -1,0 +1,16 @@
+.bank-img,
+.credit-img {
+  width: 100%;
+}
+
+.bank-card {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.credit-card {
+  padding: 9.6rem 4rem 0rem 4rem;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

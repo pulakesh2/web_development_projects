@@ -1,0 +1,31 @@
+.finance-card {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+  gap: 16rem;
+}
+
+.finance-heading {
+  width: 40rem;
+}
+/* 
+.finance-img-box {
+  display: grid;
+} */
+.finance-img {
+  width: 100%;
+  /* justify-self: end; */
+}
+.finance-image {
+  width: 100%;
+}
+
+.finance-logo-box {
+  width: 18rem;
+  margin-bottom: 4rem;
+}
+
+.finance-card:nth-child(even) {
+  flex-direction: row-reverse;
+}

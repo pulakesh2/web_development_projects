@@ -1,0 +1,16 @@
+.tool-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-img {
+  width: 100%;
+}
+
+.tool-heading {
+  width: 20rem;
+}
+
+.img-box {
+  margin-bottom: 3rem;
+}

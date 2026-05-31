@@ -1,0 +1,45 @@
+.payment-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 3rem;
+  padding: 12.6rem 10rem;
+  background-color: #fff;
+  width: 80vw;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.pay-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 18rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.wallet {
+  width: 100%;
+}
+
+.pay-img-wallet {
+  width: 6rem;
+}
+
+.wallet-para {
+  margin-bottom: 0;
+  /* width: 6rem; */
+}
+
+.payment-heading {
+  padding-top: 9.6rem;
+  /* margin-left: 4rem; */
+}
+
+.payment {
+  margin: 8rem 0;
+}
+
+.wallet-img {
+  width: 100%;
+}

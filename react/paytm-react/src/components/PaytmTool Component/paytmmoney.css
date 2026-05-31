@@ -1,0 +1,18 @@
+.paytm-money-section {
+}
+
+.img-logo-box {
+}
+.img-logo {
+  width: 60%;
+}
+.money-para {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.money-section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}

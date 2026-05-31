@@ -1,0 +1,10 @@
+.tool-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.tool-para {
+  margin-bottom: 1.4rem;
+  width: 25rem;
+}

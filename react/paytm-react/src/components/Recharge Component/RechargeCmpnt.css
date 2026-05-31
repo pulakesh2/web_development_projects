@@ -1,0 +1,31 @@
+.recharge-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 4rem;
+  transition: all 0.4s;
+}
+.recharge-card:hover {
+  background-color: #08aee0;
+  border-radius: 9px;
+}
+
+.recharge-img {
+  width: 7rem;
+}
+.images {
+  border-radius: 50%;
+  width: 100%;
+}
+.about {
+  font-size: 1.4rem;
+}
+.link:link,
+.link:active {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+}

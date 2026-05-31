@@ -1,0 +1,8 @@
+.credit-section {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  margin: 12rem auto 14rem auto;
+}

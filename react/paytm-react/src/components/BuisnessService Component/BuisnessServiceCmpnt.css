@@ -1,0 +1,20 @@
+.image {
+  width: 70%;
+  justify-self: end;
+}
+.image-box {
+  display: grid;
+}
+
+.buisness-section {
+  margin-bottom: 6.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  padding: 9.6rem 4rem;
+  background-color: #e9ecef;
+  width: 80vw;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
