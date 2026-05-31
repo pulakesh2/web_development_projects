@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main-header-h1 {
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 0.2px solid #000;
+}
+
+a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sub {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sub p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sub p:last-child {
+  font-size: 12px;
+  font-weight: 500;
+}
+.main-header-h2 {
+  color: #fff;
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 14px 0;
+}
+.main-header-h2 a {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.notice {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.recent-movies {
+  height: 350px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.recent-movies h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+.recent-movies p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.movies figure img {
+  height: 250px;
+  width: auto;
+}
+.movies figure figcaption h1 {
+  font-size: 14px;
+}
+.movies figure figcaption {
+  width: 167px;
+}
+.movies figure figcaption p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  display: inline;
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 30px 0;
+  width: 1200px;
+}
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.marvel .btns button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 50px;
+  background-color: #000;
+  color: #fff;
+  margin-right: 20px;
+}
+.marvel .btns button:hover {
+  border: 2px solid #999;
+}
+.marvel p {
+  width: 500px;
+  color: #fff;
+}
+.marvel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+.post figure img {
+  height: 150px;
+  width: auto;
+}
+.post figure p {
+  width: 250px;
+  font-weight: 700;
+}
+.post figure h4 {
+  color: #777;
+  font-size: 14px;
+}
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px 0px;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.marvel h1 {
+  width: 400px;
+  color: #fff;
+}
+.marvel {
+  height: 400px;
+}
+.latest-post img {
+  width: auto;
+  height: 250px;
+}
+.latest-post h2 {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.latest-post p {
+  font-size: 20px;
+  font-weight: 800;
+}
+.latest-post article {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  align-self: flex-start;
+}
+.latest-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+aside header h1 {
+  text-transform: uppercase;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+.img-related .img-rel img {
+  height: 120px;
+  width: auto;
+}
+.img-related figure img {
+  height: 400px;
+  width: auto;
+}
+.img-related figure {
+  width: 60%;
+}
+.img-related {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 0;
+}
+.img-rel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.img-related figure figcaption h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #777;
+}
+
+.img-related figure figcaption h1 {
+  font-size: 25px;
+}
+.img-related figure figcaption p {
+  font-size: 16px;
+  width: 550px;
+}
+figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
