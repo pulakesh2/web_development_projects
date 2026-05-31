@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 10; */
+  /* height: 500px; */
+}
+.form form {
+  margin-top: 150px;
+  border-radius: 6px;
+  z-index: 10;
+  /* height: 900px; */
+}
+.form .user-input {
+  width: 700px;
+  background-color: red;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 350px;
+}
+.form form .work,
+.form form .target,
+.form form .notification {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.form form p {
+  font-size: 20px;
+  color: #fff;
+}
+.form form input {
+  height: 35px;
+  width: 350px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.form form .work input {
+  margin-left: 15px;
+}
+.form form .target input {
+  margin-left: 22px;
+}
+.form form .button .addList,
+.form form .button .displayList {
+  font-size: 20px;
+  background-color: #228be6;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 40px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  /* z-index: 10; */
+}
+.form form .addList:hover,
+.form form .button .displayList:hover {
+  background-color: #1971c2;
+  /* z-index: 10; */
+}
+.button {
+  gap: 20px;
+}
+.list table tr td:last-child {
+  gap: 10px;
+}

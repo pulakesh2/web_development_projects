@@ -1,0 +1,15 @@
+/* table {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+} */
+.list {
+  margin: 50px auto;
+}
+
+.list button {
+  position: relative;
+}
+.list table tr td .note {
+  width: 200px;
+}

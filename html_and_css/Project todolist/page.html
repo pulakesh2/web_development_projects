@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/overlay.css" />
+    <link rel="stylesheet" href="style/signup.css" />
+    <link rel="stylesheet" href="style/form.css" />
+    <link rel="stylesheet" href="style/page.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/section.css" />
+    <link rel="stylesheet" href="style/table.css" />
+  </head>
+  <body style="background-image: url(image/bc-2.jpg); background-position: top">
+    <header>
+      <nav class="nav flex-class">
+        <a href="">todolist</a>
+        <a href="">Features</a>
+        <a href="">Templates</a>
+        <a href="">For Teams</a>
+        <a href="">Pricing</a>
+        <a href="">Login</a>
+        <a href="" class="sign-btn">Start for free</a>
+      </nav>
+    </header>
+    <section class="main-page flex-class">
+      <h1>Organize your work and life, finally.</h1>
+      <p>
+        Become focused, organized, and calm with Todoist. The world's #1 task
+        manager and to-do list app.
+      </p>
+      <button class="start">Go to todolist</button>
+    </section>
+    <div class="container hidden">
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="Write some note"
+      ></textarea>
+      <button class="add">Add</button>
+    </div>
+    <div class="list flex-class hidden">
+      <table>
+        <tr class="heading flex-class">
+          <th>work</th>
+          <th>target date</th>
+          <th>notification</th>
+        </tr>
+      </table>
+      <button class="add-new">Add</button>
+    </div>
+    <section class="form hidden">
+      <form
+        action=""
+        class="user-input flex-class"
+        style="background-image: url('image/form.jpg')"
+      >
+        <div class="work flex-class">
+          <p>Your Work:</p>
+          <input
+            type="text"
+            name="work"
+            id="work"
+            placeholder="work"
+            required
+          />
+        </div>
+        <div class="target flex-class">
+          <p>Due date:</p>
+          <input
+            type="text"
+            name="target"
+            id="target"
+            placeholder="the day you will complete your work"
+            required
+          />
+        </div>
+        <div class="notification flex-class">
+          <p>Notification:</p>
+          <input
+            type="text"
+            name="notification"
+            id="notification"
+            placeholder="remind your daily routine"
+            required
+          />
+        </div>
+        <div class="button flex-class">
+          <a class="addList">Add</a>
+          <a class="displayList">List</a>
+        </div>
+      </form>
+    </section>
+    <section class="signup flex-class hidden">
+      <h1>Sign up</h1>
+      <button class="google flex-class">
+        <img src="loginimages/google.png" alt="" />
+        <p>Continue with Google</p>
+      </button>
+      <button class="fb flex-class">
+        <img src="loginimages/fb.png" alt="" />
+        <p>Continue with Facebook</p>
+      </button>
+      <button class="twitter flex-class">
+        <img src="loginimages/twitter.png" alt="" />
+        <p>Continue with Twitter</p>
+      </button>
+      <input type="text" name="email" id="email" placeholder="Your email" />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Your Password"
+      />
+      <button class="submit">Submit</button>
+    </section>
+    <div class="overlay hidden"></div>
+    <script src="js/page.js"></script>
+    <script src="js/addForm.js"></script>
+    <script src="js/displayList.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/delete.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

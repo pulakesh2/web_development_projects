@@ -1,0 +1,40 @@
+header {
+  /* background-color: #eaeff2; */
+  background-color: rgba(222, 220, 218, 0.85);
+  padding: 10px 0px;
+}
+header .nav {
+  justify-content: flex-start;
+  gap: 40px;
+}
+header nav a:first-child {
+  padding-left: 150px;
+  font-size: 26px;
+  font-weight: 700;
+}
+header nav a:nth-child(6) {
+  padding-left: 200px;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+}
+header nav a:hover {
+  font-size: 19px;
+}
+header nav a:first-child:hover {
+  font-size: 26px;
+}
+header nav a:last-child {
+  background-color: #228be6;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 500;
+}
+header nav a:last-child:hover {
+  background-color: #1971c2;
+  font-size: 18px;
+}
