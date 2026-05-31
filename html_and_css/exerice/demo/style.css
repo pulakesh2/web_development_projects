@@ -1,0 +1,9 @@
+#div1{
+    background-image: url("messi.jpg");
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-weight: bolder;
+    background-size: contain;
+    
+}

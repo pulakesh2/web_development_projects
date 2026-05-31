@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 5vw;
+            font-size: 26px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 10vh;
+            position:sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 190vh;
+            padding-top: 12px;
+        }
+
+        .box2 {
+            background-color: green;
+            height: 190vh;
+        }
+
+        h1 {
+            font-size: .5em;
+        }
+
+        .box1,
+        .box2 {
+            width: 49vw;
+            display: inline-block;
+            margin: auto;
+        }
+        .content{
+            height: 20vh;
+            width: 10vw;
+            background-color: white;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>About</li>
+            <li>Logout</li>
+        </ul>
+    </header>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id voluptate totam tenetur deleniti? Maxime,
+        explicabo unde. Deserunt, repellendus, rerum totam quisquam, vitae necessitatibus tempore odit esse blanditiis
+        laborum maiores nihil officia molestiae distinctio.
+        <div class="content"></div>
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus a, totam nobis eligendi obcaecati dolorem sunt
+        deleniti provident doloribus est illo soluta aliquam officiis molestiae at magnam temporibus accusantium
+        laudantium impedit et voluptatem perspiciatis?
+        <h1>hello</h1>
+        <div class="content1"></div>
+    </div>
+</body>
+
+</html>

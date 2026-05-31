@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        img{
+            transition: width 1s ease-in-out .5s;
+        }
+    </style>
+</head>
+<body>
+     <div class="image">
+         <img id="img"src="https://picsum.photos/200/300.jpg" alt="pics not found">
+     </div>
+     <button id="click">Click</button>
+</body>
+<script>
+    img.style.width ="500px"
+    click.addEventListener('click',()=>{
+        if (img.style.width==="500px") {
+            img.style.width = "300px";
+        }
+        else if (img.style.width==="300px") {
+            img.style.width = "500px";
+        }   
+   })
+</script>
+</html>

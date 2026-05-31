@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+   <style>
+
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       nav{
+           background-color: black;
+           height: 0vh;
+           animation: header 1s infinite 3s alternate;
+           
+       }
+       li{
+           display: inline;
+           color: white;
+           font-size: 26px;
+           margin-left: 60px;
+       }
+       .container{
+           display: flex;
+           height: 60vh;
+           
+           justify-content: center;
+           align-content: center;
+       }
+       @keyframes slide1 {
+           0%{
+               transform: translate(-34vw);
+           }
+           100%{
+            transform: translate(34vw);
+           }
+       }
+       @keyframes slide2 {
+           0%{
+               transform: translate(0vw);
+           }
+           100%{
+            transform: translate(68vw);
+           }
+       }
+       
+       .img1{
+           transform: translate(-34vw);
+           animation: slide1 1s infinite .5s forwards;
+       }
+       .img2{
+           transform: translate(0vw);
+           animation: slide2 1s infinite .5s forwards;
+       }
+       .img3{
+           transform: translate(34vw);
+       }
+       @keyframes header {
+           0%{
+                   height: 0vh;
+               
+           }
+           100%{
+                  height:6vh;
+           }
+       }
+   </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img class="img1" src="https://picsum.photos/400/300.jpg" alt="not found">
+        <img class="img2" src="https://picsum.photos/400/300.jpg" alt="not found">
+        <img class="img3" src="https://picsum.photos/400/300.jpg" alt="not found">
+    </div>
+</body>
+</html>

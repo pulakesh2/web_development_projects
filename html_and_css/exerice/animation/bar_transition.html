@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            height: 6vh;
+            transition: width 1s ease-in;
+            padding-top: 2px;
+        }
+
+        li {
+            color: white;
+            display: inline-block;
+            margin-left: 4vw;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>LogOut</li>
+        </ul>
+    </nav>
+    <button id="click">click</button>
+</body>
+<script>
+     nav.style.width = '100vw';
+    click.addEventListener('click',()=>{
+      if ( nav.style.width === '100vw') {
+        nav.style.width = '45vw';
+      }
+      else if ( nav.style.width === '45vw') {
+        nav.style.width = '100vw';
+      }
+    })
+</script>
+</html>
