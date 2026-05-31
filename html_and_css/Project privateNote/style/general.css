@@ -1,0 +1,98 @@
+/* 
+Rules->
+
+1. font-size : 12px / 14px / 16px / 18px / 20px / 24px / 30px / 36px / 44px / 52px / 64px / 72px / 86px / 92px / 108px
+2. Spacing : 10px / 16px / 24px / 36px / 44px / 56px / 68px / 80px / 96px
+3. Brand color : ;
+4. html size : 62.5%
+5font-weight : 500(default)
+*/
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #fceaea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+.flex-v {
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-align-v {
+  align-content: center;
+}
+
+.container {
+  max-width: 116rem;
+  margin: auto;
+  padding: 0 3.6rem;
+  height: 92vh;
+}
+
+.primary-heading {
+  font-size: 6.8rem;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+  /* line-height: 1; */
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  color: #555;
+}
+
+.hidden-opacity {
+  /* display: none; */
+  opacity: 0;
+}
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+  /* filter: blur(4px); */
+}
+
+.submit {
+  border: none;
+  color: #fff;
+}
+
+.grid-1-2-cols {
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}

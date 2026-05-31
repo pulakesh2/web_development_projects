@@ -1,0 +1,27 @@
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.add-notes-btn {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to right, #94d82d, #a9e34b);
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.add-notes-btn:hover {
+  background-image: linear-gradient(to right, #74b816, #5c940d);
+}
+
+.section-hero {
+  background-size: cover;
+  position: relative;
+}
