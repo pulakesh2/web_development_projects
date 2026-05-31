@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #161618;
+}
+/* ****************************clearing the navbar************************* */
+.first_layout {
+  background-color: #000;
+  color: #ffffff;
+  position: relative;
+  width: 300px;
+}
+img {
+  height: 50px;
+  width: auto;
+}
+.spotify_logo {
+  height: 40px;
+  width: auto;
+  display: inline;
+}
+.first_layout h1 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+}
+.icon {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+nav a,
+img {
+  display: inline-block;
+}
+nav a {
+  margin-top: -10px;
+  position: absolute;
+  top: 26px;
+  left: 70px;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+a:hover {
+  color: #ffffff;
+  font-size: 20px;
+}
+hr {
+  width: 80%;
+  margin-left: 2vw;
+}
+/* *************************clearing the navbar******************************** */
+
+/* ****************************building 2nd layout**************************** */
+
+.second_layout {
+  color: #ffffff;
+  width: 800px;
+}
+p {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+.second_layout h1 {
+  font-size: 45px;
+}
+
+.profile {
+  height: 300px;
+  width: auto;
+  float: left;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+.verified-logo {
+  float: left;
+  height: 20px;
+  width: auto;
+  margin-left: 5vw;
+}
+.verified::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.verified {
+  background-color: #22303c;
+  position: relative;
+  color: #ffffff;
+  padding: 15px;
+}
+.verified h1 {
+  position: absolute;
+  left: 396px;
+  top: 140px;
+}
+
+.verified-logo {
+  position: absolute;
+  left: 330px;
+  top: 110px;
+}
+
+.verified p {
+  position: absolute;
+  left: 420px;
+  top: 110px;
+}
+h4 {
+  position: absolute;
+  left: 400px;
+  top: 220px;
+}
+button {
+  display: inline-block;
+  width: 8vw;
+  height: 3vw;
+  font-size: 15px;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #15202b;
+  color: #ffffff;
+  border: 1px solid #777;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+button:hover {
+  border: 2px solid #ffffff;
+}
+.part-layout {
+  background-color: #15202b;
+}
+
+.list-songs {
+  margin-top: 15px;
+  margin-left: 45px;
+  padding-bottom: 40px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+ol {
+  margin-left: 43px;
+}
+
+ol li {
+  margin-bottom: 30px;
+  position: relative;
+}
+ol li:last-child {
+  margin-bottom: 0;
+}
+.skill {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+  position: absolute;
+}
+.skill_p {
+  position: absolute;
+  left: 5vw;
+}
+.skill_status {
+  position: absolute;
+  left: 25vw;
+  text-transform: uppercase;
+}
+
+/* ***************************build the real page******************* */
+.first_layout {
+  float: left;
+  padding: 40px;
+  /* height: 80.5vh; */
+  height: 575px;
+}
+.second_layout {
+  float: right;
+  padding: 0px;
+}
+.container {
+  width: 1180px;
+  margin: 5vw auto;
+  /* height: 800px; */
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.second_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav {
+  margin-top: 30px;
+}
