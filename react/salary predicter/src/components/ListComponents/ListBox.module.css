@@ -1,0 +1,9 @@
+.list__box {
+  /* background-color: #69db7c; */
+  width: 70%;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
