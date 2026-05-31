@@ -1,0 +1,75 @@
+@import "../abstract/variable";
+
+.tab__container {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  background-color: $color-primary-dark;
+
+  margin: 0 auto;
+  padding: 3rem 3rem 3rem 0;
+
+  width: 70%;
+
+  border-radius: $border-radius-primary;
+  box-shadow: $box-shadow-3;
+
+  &--picture-box {
+    height: 20rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: $box-shadow-3;
+
+    border-radius: $border-radius-primary;
+  }
+
+  &--picture {
+    height: 100%;
+    background-size: cover;
+
+    transform: scale(1.3);
+    transition: all 0.3s;
+  }
+  &--content {
+    grid-column: 2/-1;
+
+    color: $color-white;
+  }
+
+  &--caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 900%);
+    transition: all 0.3s;
+
+    opacity: 0;
+
+    color: $color-white;
+    font-size: $default-font-size;
+    text-align: center;
+  }
+
+  &:hover &--caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &--picture {
+    transform: scale(1);
+    filter: blur(3px);
+  }
+}
+
+// FOR JAVASCRIPT-->
+.tab__container {
+  &-active {
+    display: grid;
+  }
+}

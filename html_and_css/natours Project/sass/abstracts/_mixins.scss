@@ -1,0 +1,75 @@
+// @import "../base/animation";
+
+@mixin clear-fix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin heading-primary($color) {
+  .heading-primary {
+    color: $color;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    @include heading-primary--main;
+    @include heading-primary--sub;
+  }
+}
+
+// heading-primary-sub
+@mixin heading-primary--main {
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+}
+
+// heading primary sub
+@mixin heading-primary--sub {
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+//btn style
+@mixin btn-style {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: $default-font-size;
+  cursor: pointer;
+  border: none;
+  /* z-index: 10; */
+}
+
+//after - effect
+@mixin after-effect {
+  content: "";
+  /* here we use inline block because btn is inline block element */
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}

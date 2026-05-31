@@ -1,0 +1,84 @@
+*{
+  margin : 0;
+  padding:  0;
+}
+
+$color-primary : #f9ed69; // yellow color
+$color-secondary : #f08a5d; // orange color
+$color-tertiary : #b83b5e; //pink color
+$color-text-dark: #333;
+$color-text-light: #eee;
+$color-size : 16px;
+
+// divide function
+@function divide($a,$b){
+  @return $a / $b;
+}
+
+//list-style
+@mixin list-style{
+  ul{
+  list-style : none;
+  li{
+    display:inline;
+    margin-left:30px;
+    
+     &:first-child{
+        margin:0;
+    }
+    a:link{
+        @include anchor-style($color-text-light);
+    }
+  }
+}
+}
+
+// anchor DRY 
+@mixin anchor-style($color){
+      text-decoration : none;
+      text-transform:uppercase;
+      color : $color;   
+} 
+
+
+//extends placeholder
+%btn-placeholder{
+   padding: 10px;
+    border-radius:100px;
+    font-size: $color-size;
+    @include anchor-style($color-text-dark);
+}
+
+nav{
+  margin:divide(20,2) * 1px;
+  background-color: $color-tertiary;
+  display:flex;
+  justify-content: space-between;
+  
+  @include list-style;
+}
+
+
+
+.btn-main{
+  &:link{
+    @extend %btn-placeholder;
+    background-color:$color-primary;
+  }
+  &:hover{
+    background-color: darken($color-primary,20%);
+  }
+}
+
+
+
+
+.btn-sub{
+  &:link{
+    @extend %btn-placeholder;
+    background-color:$color-secondary;
+  }
+  &:hover{
+    background-color: lighten($color-secondary,20%);
+  }
+}

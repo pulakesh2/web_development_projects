@@ -1,0 +1,198 @@
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  position: relative;
+  height: 40rem;
+
+  &__side {
+    height: 40rem;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    transition: all 1s ease;
+
+    &--front {
+      // background-color: #000;
+    }
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary-dark, 0.8)
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary-dark, 0.8)
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, 0.8),
+          rgba($color-tertiary-dark, 0.8)
+        );
+      }
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  // FRONT SIDE
+  &__picture {
+    height: 18rem;
+    background-size: cover;
+
+    // new styling an image-->( IMPORTANT )
+    background-blend-mode: screen;
+
+    // Both are same-->
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary-dark, 0.8)
+        ),
+        url(../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary-dark, 0.8)
+        ),
+        url(../img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, 0.8),
+          rgba($color-tertiary-dark, 0.8)
+        ),
+        url(../img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    width: 75%;
+
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+  }
+
+  &__heading--span {
+    padding: 1rem 1.5rem;
+    color: $color-white;
+
+    //split the box-->
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    //span boxes-->
+    &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.8),
+        rgba($color-secondary-dark, 0.8)
+      );
+    }
+
+    &-2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
+    }
+
+    &-3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)
+      );
+    }
+  }
+
+  &__details {
+    margin-top: 1.5rem;
+    ul {
+      list-style: none;
+      font-size: 1.5rem;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        padding: 1px 0;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // BACK SIDE-->
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &__price {
+    &-box {
+      text-align: center;
+      color: $color-white;
+      margin-bottom: 8rem;
+    }
+    &-only {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    &-value {
+      font-size: 6rem;
+      font-weight: 100;
+    }
+  }
+}

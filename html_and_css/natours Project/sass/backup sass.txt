@@ -1,0 +1,214 @@
+// COLORS:
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+$color-grey-dark: #777;
+$color-white: #fff;
+/* ************************BASIC RESET************************ */
+
+/* UNIVERSAL RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* it will not add extra margin or padding to the element */
+  box-sizing: inherit;
+}
+/* UNIVERSAL RESET */
+
+/* BODY ELEMENT */
+
+/* default value inheritance */
+body {
+  font-family: "Lato", sans-serif;
+  /* default font weight */
+  font-weight: 400;
+  line-height: 1.7;
+  /* font-size: 16px; */
+  color: $color-grey-dark;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* BODY ELEMENT */
+
+/* ************************BASIC RESET************************ */
+
+/* ****************************ELEMENTS********************* */
+
+/* HEADER */
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  /* triangle */
+  /* clip-path: polygon(50% 0, 100% 100%, 0 100%); */
+  /* triangle */
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.74rem;
+  animation: moveInRight 1s ease-out;
+
+  /* ******************ANIMATION POPERTY*************** */
+
+  /* animation-timing-function: ease-out; */
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 4; */
+
+  /* ************************ANIMATION POPERTY************************* */
+}
+
+/* BTN */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  /* z-index: 10; */
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* click state is active state */
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* click state is active state */
+.btn--white {
+  background-color: $color-white;
+  color: $color-grey-dark;
+}
+
+/* PSEUDO ELEMENT-->  */
+.btn::after {
+  content: "";
+  /* here we use inline block because btn is inline block element */
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.btn--white::after {
+  background-color: $color-white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+/* PSEUDO ELEMENT--> */
+
+.btn--animated {
+  animation: moveInUp 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+/* BTN */
+/* ANIMATION */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ANIMATION */
+
+/* HEADER */
+/* ****************************ELEMENTS********************* */
