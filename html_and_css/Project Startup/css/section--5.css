@@ -1,0 +1,31 @@
+/* font size--> 16 | 18 | 20 | 24 | 30 | 36 | 44 | 54 | 64 | 78 | 90 */
+
+.section-5 article .article-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section-5 article .article-content h1 {
+  font-size: 24px;
+  letter-spacing: -0.3px;
+  margin-bottom: 16px;
+}
+.section-5 article .article-content p {
+  color: #868e96;
+  font-size: 18px;
+  width: 430px;
+  line-height: 1.7;
+}
+.section-5 {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 100px 0;
+}
+.section-5 article {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  height: 500px;
+}

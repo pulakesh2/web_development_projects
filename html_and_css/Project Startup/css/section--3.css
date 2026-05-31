@@ -1,0 +1,36 @@
+/* font size--> 16 | 18 | 20 | 24 | 30 | 36 | 44 | 54 | 64 | 78 | 90 */
+
+.section-3,
+.section-4,
+.section-7 {
+  background-color: rgba(9, 14, 52);
+}
+
+.section-3 {
+  flex-direction: column;
+  color: #fff;
+  gap: 16px;
+  padding: 100px;
+}
+.section-3 p {
+  text-align: center;
+  width: 600px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #868e96;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.section-3 h1 {
+  font-size: 44px;
+}
+.section-3 .sponser {
+  gap: 50px;
+  background-color: rgb(6, 15, 80);
+  padding: 60px 80px;
+  margin-top: 150px;
+}
+.section-3 .sponser img {
+  width: 150px;
+  height: auto;
+}

@@ -1,0 +1,88 @@
+/* font size--> 16 | 18 | 20 | 24 | 30 | 36 | 44 | 54 | 64 | 78 | 90 */
+.section-7 {
+  padding: 100px;
+}
+
+.section-7 header,
+.section-8 header {
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 150px;
+}
+.section-7 header h1,
+.section-8 header h1 {
+  font-size: 44px;
+  letter-spacing: -1px;
+}
+.section-7 header .text,
+.section-8 header .text {
+  color: #868e96;
+  font-size: 18px;
+  width: 550px;
+  text-align: center;
+  line-height: 1.7;
+}
+.section-7 .card-layout {
+  gap: 40px;
+}
+.section-7 .card-layout .card {
+  background-color: rgb(8, 15, 73);
+  padding: 40px 30px;
+  width: 300px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  border-radius: 10px;
+}
+.section-7 .card-layout .card article,
+.section-7 .card-layout .card ul li {
+  color: #868e96;
+}
+.section-7 .card-layout .card header p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.section-7 .card-layout .card header h1 {
+  font-size: 24px;
+}
+.section-7 .card-layout .card header h1 span {
+  color: #868e96;
+}
+.section-7 .card-layout .card header {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.section-7 .card-layout .card button {
+  background-color: #228be6;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.section-7 .card-layout .card button:hover {
+  background-color: #1c79ca;
+}
+.section-7 .card-layout .card ul {
+  margin-top: 60px;
+  list-style: none;
+}
+.section-7 .card-layout .card ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.section-7 .card-layout .card ul li:last-child {
+  margin-bottom: 0;
+}
+.section-7 .card-layout .card ul li span .right-icon {
+  height: 10px;
+  width: auto;
+  border-radius: 100px;
+  padding: 5px;
+}

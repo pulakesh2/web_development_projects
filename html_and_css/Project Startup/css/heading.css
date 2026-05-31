@@ -1,0 +1,39 @@
+/* font size--> 16 | 18 | 20 | 24 | 30 | 36 | 44 | 54 | 64 | 78 | 90 */
+
+.section--1 {
+  flex-direction: column;
+  gap: 60px;
+  height: 600px;
+  /* width: 600px; */
+}
+.section--1 h1 {
+  font-size: 44px;
+  width: 500px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  text-align: center;
+}
+.section--1 p {
+  width: 600px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.section--1 .btn a:first-child {
+  background-color: #228be6;
+}
+.section--1 .btn a:first-child:hover {
+  background-color: #1971c2;
+}
+.section--1 .btn a:last-child {
+  background-color: #2e2252;
+}
+.section--1 .btn a {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.section--1 .btn {
+  gap: 20px;
+}

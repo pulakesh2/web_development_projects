@@ -1,0 +1,76 @@
+/* font size--> 16 | 18 | 20 | 24 | 30 | 36 | 44 | 54 | 64 | 78 | 90 */
+
+.section-6 {
+  background-color: rgb(12, 18, 60);
+  padding: 100px 0;
+}
+.section-6 .card-layout .card {
+  background-color: rgba(59, 131, 246, 0.051);
+  padding: 30px 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px 1px black; */
+}
+.section-6 article p {
+  color: #868e96;
+  font-size: 18px;
+  width: 550px;
+  text-align: center;
+}
+.section-6 article h1 {
+  font-size: 44px;
+  letter-spacing: -1px;
+}
+.section-6 article {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+.section-6 .card-layout .card .star-icon {
+  height: 20px;
+  width: auto;
+  margin-bottom: 15px;
+  fill: gold;
+}
+.section-6 .card-layout,
+.section-8 .card-layout {
+  align-items: flex-start;
+  margin: 0px auto;
+  gap: 40px;
+  width: 80%;
+  /* padding: 0px 100px; */
+}
+.section-6 .card-layout .card p,
+.section-8 .card-layout .card p {
+  /* width: 400px; */
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+.section-6 .card-layout .card .author .author-details h4,
+.section-8 .card-layout .card .author .author-details h4,
+.section-8 .card-layout .card .author .birth-details h4 {
+  font-size: 20px;
+  font-weight: 500;
+  /* margin-bottom: 5px; */
+}
+
+.section-6 .card-layout .card .author .author-details p,
+.section-8 .card-layout .card .author .author-details p,
+.section-8 .card-layout .card .author .birth-details p {
+  color: #868e96;
+  margin-bottom: 0;
+}
+.section-6 .card-layout .card .author img,
+.section-8 .card-layout .card .author img {
+  height: 60px;
+  width: auto;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.section-6 .card-layout .card .author,
+.section-8 .card-layout .card .author {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
