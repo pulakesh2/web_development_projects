@@ -1,0 +1,82 @@
+/* HOW-TO-USE-SECTION */
+.how-to-use-section {
+  padding: 8rem 0rem;
+  /* background-color: #f1f3f5; */
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.row-1 {
+  align-items: center;
+  margin-bottom: 10rem;
+  /* justify-items: center; */
+}
+
+.row-1:last-child {
+  margin-bottom: 0rem;
+}
+.mobile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mobile::after {
+  display: block;
+  content: "";
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #ffc9c9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100rem;
+  z-index: -2;
+}
+.mobile::before {
+  display: block;
+  content: "";
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #ff8787;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100rem;
+  z-index: -1;
+}
+
+.how-step {
+  font-weight: 600;
+  color: #ced4da;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+.how-heading {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+.how-para {
+  font-size: 2rem;
+  color: #aaa;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .how-step {
+    font-size: 4.5rem;
+  }
+  .how-heading {
+    font-size: 3rem;
+  }
+  .how-para {
+    font-size: 1.8rem;
+  }
+}
