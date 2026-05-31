@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #2370f4;
+  padding: 5px 0;
+}
+body {
+  background-color: #f2f2f2;
+}
+#search {
+  width: 430px;
+  height: 30px;
+}
+.btn {
+  border: 0;
+  background-color: #2370f4;
+  color: #fff;
+  font-weight: 700;
+}
+.login {
+  color: #2370f4;
+  padding: 5px 40px;
+  font-weight: 600;
+  border: 0;
+}
+/* First Layout FLEXBOX */
+.first_layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+figure {
+  text-align: center;
+}
+.first_layout img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+.iphone13mini {
+  width: 150px;
+  height: auto;
+}
+/* Second Layout FLEXBOX */
+.second_layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-color: #8aff8a;
+  padding: 15px 0;
+}
+.second_layout aside h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.second_layout aside h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.second_layout aside p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+aside {
+  flex: 0 0 500px;
+}
+/* third_layout FLEXBOX */
+.third_layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+.third_layout img {
+  width: auto;
+  height: 70px;
+}
+/* Fourth Layout FLEXBOX */
+.fourth_layout {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 60px;
+  padding: 30px 0;
+}
+.fourth_layout figure img {
+  width: 140px;
+  height: auto;
+}
+.fourth_layout figure figcaption h4 {
+  margin-bottom: 12px;
+}
+.fourth_layout figure figcaption p {
+  color: green;
+}

@@ -1,0 +1,165 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #b2b2b2;
+}
+header {
+  background-color: #2370f4;
+  position: relative;
+  height: 55px;
+}
+button {
+  display: inline-block;
+}
+.logo {
+  margin-left: 210px;
+}
+#search {
+  width: 430px;
+  height: 30px;
+  margin-left: 15px;
+  position: absolute;
+  top: 10px;
+  padding-left: 20px;
+}
+.login {
+  padding: 5px 40px;
+  color: #2370f4;
+  font-weight: 600;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  top: 14px;
+  left: 740px;
+}
+.btn {
+  border: 0;
+  background-color: #2370f4;
+  color: #fff;
+  font-weight: 700;
+}
+.btn:last-child {
+  margin-left: 0;
+}
+.cart {
+  position: absolute;
+  right: 145px;
+  top: 15px;
+}
+.child1 {
+  position: absolute;
+  top: 20px;
+  right: 290px;
+}
+
+.child2 {
+  position: absolute;
+  top: 20px;
+  right: 230px;
+}
+
+.child3 {
+  position: absolute;
+  top: 20px;
+  right: 115px;
+}
+
+/* ***************************building 2nd layout************************ */
+figure {
+  display: inline-block;
+  margin-left: 60px;
+  text-align: center;
+}
+figcaption {
+  font-size: 14px;
+  font-weight: 500;
+}
+figure img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+.furniture {
+  margin-right: 2px;
+}
+.first_layout {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+/* **************************building 2nd layout******************* */
+.second_layout {
+  background-color: #8aff8a;
+  padding: 15px 0;
+}
+.iphone13mini {
+  width: 150px;
+  height: auto;
+  float: left;
+  margin-left: 350px;
+}
+aside {
+  float: right;
+  margin-right: 200px;
+  margin-top: 30px;
+  width: 500px;
+}
+.second_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+aside h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+aside h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+aside p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ********************building 3rd layout**************** */
+.third_layout {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+.third_layout img {
+  height: 60px;
+  width: auto;
+  margin-right: 30px;
+}
+/* *************************building 4rth layout**************** */
+.fourth_layout {
+  text-align: center;
+
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+}
+.fourth_layout figure img {
+  width: 140px;
+  height: auto;
+  border-radius: 0%;
+}
+figure h4 {
+  margin-bottom: 12px;
+}
+figure p {
+  color: green;
+}
+.fourth_layout figure {
+  margin-right: -8px;
+}
+.bat {
+  margin-left: -30px;
+}
