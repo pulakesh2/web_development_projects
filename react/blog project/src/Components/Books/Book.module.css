@@ -1,0 +1,18 @@
+.btn {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.book__container {
+  position: relative;
+}
+
+.img__box {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}

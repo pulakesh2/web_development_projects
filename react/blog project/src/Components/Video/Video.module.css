@@ -1,0 +1,16 @@
+.video {
+  width: 80%;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+}
+
+.video__box {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 35em) {
+  .video {
+    height: auto;
+  }
+}
