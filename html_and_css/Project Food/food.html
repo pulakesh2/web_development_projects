@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="css/button-card.css" />
+    <link rel="stylesheet" href="css/display-starter.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+  </head>
+  <body style="background-image: url('images/background-image.jpg')">
+    <section class="button-card flex-class">
+      <button class="chicken">Chicken Starter</button>
+      <button class="pork">Pork Starter</button>
+      <button class="duck">Duck Starter</button>
+    </section>
+    <section class="display-starter flex-class"></section>
+    <button class="order-btn hidden">Order</button>
+    <section class="form hidden flex-class">
+      <form action="" class="flex-class">
+        <div class="first-name">
+          <p>First Name:</p>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="last-name">
+          <p>Last Name:</p>
+          <input
+            type="text"
+            name="lastt-name"
+            id="last-name"
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="order">
+          <p>Your Order:</p>
+          <input
+            type="text"
+            name="order"
+            id="order"
+            placeholder="What starter you want, sir"
+          />
+        </div>
+        <button class="submit">Order Now</button>
+        <article>
+          we are gratful that you are having great food from us, &copy pulakesh
+          malakar
+        </article>
+      </form>
+    </section>
+    <section class="done hidden flex-class"></section>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="js/overview.js"></script>
+</html>
