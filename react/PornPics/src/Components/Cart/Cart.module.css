@@ -1,0 +1,15 @@
+.image__box {
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: translateY(-12px);
+}
+
+.image {
+  width: 100%;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s;
+}

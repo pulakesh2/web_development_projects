@@ -1,0 +1,101 @@
+.profile-img,
+.img {
+  width: 100%;
+}
+
+.img {
+  transition: all 0.3s;
+}
+.img:hover {
+  transform: scale(1.2);
+}
+
+.content-box {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 3.5fr 3.5fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 1rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+.img-box {
+  margin-bottom: 0.6rem;
+  overflow: hidden;
+}
+.card {
+  background-color: #21275b;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background-color: rgb(8, 15, 73);
+  transform: translateY(-1rem);
+}
+
+.primary-heading {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.secondary-heading {
+  color: #777;
+  font-size: 0.7rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.6rem);
+}
+
+.btn:active {
+  transform: translateY(0.3rem);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #087f5b;
+
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.btn-link {
+  text-align: center;
+}
