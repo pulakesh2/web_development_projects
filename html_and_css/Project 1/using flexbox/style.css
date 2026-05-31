@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+article header {
+  margin-bottom: 30px;
+}
+.h2 {
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+article {
+  margin-bottom: 50px;
+}
+ol,
+ul {
+  padding: 0 80px;
+}
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+#author {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+#copywrite {
+  font-size: 12px;
+}
+
+.related {
+  list-style: none;
+  padding: 10px;
+}
+.main-header {
+  background-color: #f7f7f7;
+  /* background-color: red; */
+  margin-bottom: 40px;
+  /* height: 100px; */
+  padding: 0 20px;
+  /* height: 50px; */
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 300px;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+
+/* Psuedo class dont work perfectly on parent element who have mix elements
+it works only those parent element which have same elements */
+/* li:first-child {
+  font-style: italic;
+}
+li:last-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  color: red;
+} */
+
+/* Styling with anchor teg */
+/* LVHA
+  L=link 
+  V= Visited
+  H = Hover
+  A = Active
+
+*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+/* a {
+  color: #1098ad;
+} */
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+/* a:active { */
+/* text-decoration: dashed; */
+/* } */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+nav a:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+header h1::first-letter {
+  font-style: italic;
+}
+h2 + p::first-letter {
+  font-size: 25px;
+}
+
+header h2:first-child {
+  /* background-color: red; */
+  position: relative;
+}
+header h2:first-child::after {
+  content: "TOP";
+  font-size: 12px;
+  background-color: #ffe70e;
+  position: absolute;
+  font-weight: bold;
+  color: #000;
+  top: -10px;
+  right: 250px;
+  padding: 4px 10px;
+}
+
+/*
+FLOATS
+
+.author-img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+  margin-top: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  float: left;
+  width: 800px;
+}
+aside {
+  float: right;
+  font-size: 12px;
+  width: 350px;
+  height: 400px;
+}
+footer {
+  /* display: block; 
+  clear: both;
+}
+*/
+aside ul li {
+  margin-bottom: 40px;
+}
+
+aside ul li:last-child {
+  margin-bottom: 0;
+}
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-img {
+  height: 60px;
+  width: auto;
+}
+.author-details {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.column {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+aside {
+  flex: 0 0 350px;
+}
+article {
+  flex: 1;
+}
