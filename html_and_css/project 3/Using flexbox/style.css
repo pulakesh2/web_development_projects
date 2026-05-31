@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: #f7f7f7ff;
+  height: 40px;
+}
+button {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container {
+  width: 900px;
+  margin: 100px auto;
+  border: 5px solid #000;
+}
+.details {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #999;
+}
+.color {
+  height: 20px;
+  width: 20px;
+}
+.blackk {
+  background-color: #000;
+}
+.sky {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.silver {
+  background-color: silver;
+}
+.boxes {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 50px;
+}
+h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+li {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+a:link {
+  color: #000;
+  /* margin-bottom: 30px; */
+}
+a:hover {
+  font-size: 18px;
+  text-decoration: none;
+}
+.thirdlayout {
+  margin-top: 20px;
+}
+img {
+  width: 250px;
+  height: 300px;
+}

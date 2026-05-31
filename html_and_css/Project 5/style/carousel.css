@@ -1,0 +1,106 @@
+/* font size 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 50 / 56 / 62 / 72 */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 200px;
+  width: auto;
+  transform: scale(1.6);
+  border-radius: 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.carousel {
+  background-color: #087f5b;
+  width: 60vw;
+  margin: 15vh auto;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  padding-left: 7vw;
+  gap: 8vw;
+  border-radius: 8px;
+  position: relative;
+}
+.testimonial-text {
+  color: #d3f9d8;
+
+  /* color: #fff; */
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.testimonial-author {
+  color: #d3f9d8;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.testimonial-job {
+  color: #d3f9d8;
+  font-size: 12px;
+}
+
+.btn--left,
+.btn--right {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+  /* font-weight: 700; */
+}
+button .btn-left,
+button .btn-right {
+  height: 26px;
+  width: auto;
+  stroke: #087f5b;
+}
+.btn--left {
+  /* in relation to parent element */
+  left: 0;
+  top: 50%;
+  /* in relation to element itself */
+  transform: translate(-50%, -50%);
+}
+.btn--right {
+  /* in relation to parent element */
+  right: 0;
+  top: 50%;
+  /* in relation to element itself */
+  transform: translate(+50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  display: flex;
+  gap: 12px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #087f5b;
+  cursor: pointer;
+  border-radius: 100px;
+}
+.carousel .dots .open {
+  background-color: #087f5b;
+}
