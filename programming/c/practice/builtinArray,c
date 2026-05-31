@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // char a[] = "hello";
+    // char b[];
+    
+    // strcpy(b,a);
+    printf("hello wordl");
+    return 0;
+}
