@@ -1,0 +1,38 @@
+.note__card {
+  /* background-image: linear-gradient(to left bottom, #40c057, #2f9e44); */
+  background-color: #495057;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s;
+}
+
+.note__card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  cursor: pointer;
+}
+
+span {
+  transition: all 0.3s;
+}
+
+.note__card:hover span {
+  background-color: #7048e8;
+  padding: 0.2rem 0.8rem;
+  margin-right: 1rem;
+}
+
+.note__card-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.note__card-desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+@media (max-width: 37.5em) {
+}

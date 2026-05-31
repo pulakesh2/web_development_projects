@@ -1,0 +1,46 @@
+.note__form {
+  background-color: #495057;
+  padding: 3rem 5rem;
+  width: 40%;
+  margin: 0rem auto;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 3rem;
+}
+
+.note__input {
+  height: 4rem;
+  width: 70%;
+  padding: 0.5rem 1rem;
+}
+.note-text {
+  width: 70%;
+  height: 15rem;
+  padding: 0.5rem 1rem;
+}
+
+.note-submit {
+  background: none;
+  border: none;
+}
+
+.btn-green {
+  display: inline-block;
+  background-color: #495057;
+  /* background-color: #40c057; */
+  border-radius: 3px;
+}
+
+.note__label {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+@media (max-width: 37.5em) {
+  .note__form {
+    width: 80%;
+  }
+}
