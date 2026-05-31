@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .container .el {
+        /* width: 350px; */
+        height: 200px;
+        background-color: red;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 40px;
+        column-gap: 20px;
+        width: 80%;
+        margin: 100px auto;
+        margin-bottom: 0px;
+      }
+      .el {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .container .el .btn {
+        /* background: none; */
+        border: none;
+        padding: 10px 20px;
+        background-color: #40c057;
+        color: #fff;
+        font-weight: 500;
+      }
+      .container .el .btn:hover {
+        background-color: #2f9e44;
+      }
+      .hidden-content {
+        background-color: blue;
+        margin-bottom: 2px;
+        width: 200px;
+        height: 150px;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #fff;
+        margin-top: 5px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">
+        <button class="btn">View Profile</button>
+      </div>
+      <div class="el el--2">
+        <button class="btn">View Profile</button>
+      </div>
+      <div class="el el--3">
+        <button class="btn">View Profile</button>
+      </div>
+      <div class="el el--4">
+        <button class="btn">View Profile</button>
+      </div>
+      <div class="el el--5">
+        <button class="btn">View Profile</button>
+      </div>
+      <div class="el el--6">
+        <button class="btn">View Profile</button>
+      </div>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-1</h1>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-2</h1>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-3</h1>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-4</h1>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-5</h1>
+    </div>
+    <div class="hidden-content hidden">
+      <h1>box-6</h1>
+    </div>
+  </body>
+  <script src="practice.js"></script>
+</html>
