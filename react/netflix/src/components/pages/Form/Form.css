@@ -1,0 +1,36 @@
+.series {
+  width: 40%;
+  margin: 2rem auto;
+
+  background-color: #343a40;
+  padding: 2rem;
+  border-radius: 4px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  color: #fff;
+}
+
+.series_name,
+.series_date {
+  font-size: 2rem;
+}
+
+input {
+  height: 3.5rem;
+  width: 50%;
+
+  padding: 0 2rem;
+}
+
+.btn-button {
+  background: none;
+  border: none;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+
+  border-radius: 3px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

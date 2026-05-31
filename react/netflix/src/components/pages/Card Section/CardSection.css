@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 2rem 1rem;
+}
+
+.card__section {
+  margin: 2rem 1.5rem;
+}

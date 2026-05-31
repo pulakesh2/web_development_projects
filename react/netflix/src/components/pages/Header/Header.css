@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 5.6rem;
+  background-color: #f03e3e;
+}
+
+.header__logo-box {
+  height: 3rem;
+}
+
+.header__logo {
+  height: 100%;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #ff6b6b;
+  font-size: 1.8rem;
+
+  padding: 0.5rem 1.5rem;
+
+  background-color: #fff;
+
+  border-radius: 3px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  transition: all 0.3s;
+
+  z-index: 2;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ff6b6b;
+
+  transform: scale(1.2);
+  color: #fff;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
