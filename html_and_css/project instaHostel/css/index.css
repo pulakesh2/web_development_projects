@@ -1,0 +1,49 @@
+.content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  background-color: #262626; /* Dark gray for content boxes */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.content:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content__image-box {
+  flex: 0 0 100px;
+}
+
+.content__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease; /* Fade effect */
+}
+
+.content__image:hover {
+  opacity: 0.8; /* Slight fade on hover */
+}
+
+.content__post-box {
+  margin-left: 15px;
+}
+
+.user__name {
+  font-weight: 500;
+  color: #00b4d8; /* Cyan for usernames */
+}
+
+.user__post {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}

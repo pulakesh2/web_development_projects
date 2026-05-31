@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create a new post with text and images."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Create Post | Social Platform</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <!-- <link rel="stylesheet" href="css/user.css" /> -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/post.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <div class="back__button">
+        <a href="index.html" class="btn btn__red" aria-label="Back to home"
+          >Back &rarr;</a
+        >
+      </div>
+
+      <!-- Post Form -->
+      <form
+        class="post__box"
+        method="POST"
+        enctype="multipart/form-data"
+        aria-label="Create a new post"
+      >
+        <fieldset class="post">
+          <div class="post__name">
+            <label for="username">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="username"
+              placeholder="Pulakesh Malakar"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="post__article">
+            <label for="article">Post</label>
+            <input
+              type="text"
+              name="article"
+              id="article"
+              placeholder="What's on your mind"
+              required
+              aria-required="true"
+            />
+          </div>
+        </fieldset>
+
+        <!-- Image Upload -->
+        <div class="img__box">
+          <div class="post__img">
+            <label for="file" class="upload">Upload Image:</label>
+            <input type="file" name="user__image" id="file" accept="image/*" />
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="upload__btn">
+          <button type="submit" class="btn btn__green">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Ionicon Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      async
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      async
+    ></script>
+  </body>
+</html>

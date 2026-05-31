@@ -1,0 +1,84 @@
+.back__button {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth button effects */
+}
+
+.btn__red {
+  background-color: #d90429; /* Red for back button */
+  color: #e0e0e0;
+}
+
+.btn__red:hover {
+  background-color: #ef233c;
+  transform: scale(1.05);
+}
+
+.post__box {
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.post__box:hover {
+  transform: translateY(-5px);
+}
+
+.post__name,
+.post__article {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #00b4d8;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333; /* Dark input background */
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background-color: #404040;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.5); /* Cyan glow on focus */
+  outline: none;
+}
+
+.img__box {
+  margin: 15px 0;
+}
+
+input[type="file"] {
+  padding: 5px;
+  color: #e0e0e0;
+}
+
+.upload__btn {
+  text-align: right;
+}
+
+.btn__green {
+  background-color: #2b9348; /* Green for send button */
+  color: #e0e0e0;
+}
+
+.btn__green:hover {
+  background-color: #55a630;
+  transform: scale(1.05);
+}

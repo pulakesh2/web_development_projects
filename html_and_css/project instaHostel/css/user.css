@@ -1,0 +1,67 @@
+.user__box {
+  background-color: #262626; /* Dark gray for user box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease; /* Smooth lift effect */
+}
+
+.user__box:hover {
+  transform: translateY(-5px);
+}
+
+.user__username {
+  font-size: 1.5rem;
+  color: #00b4d8; /* Cyan for username */
+}
+
+.user__name {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.user__occupation,
+.user__address,
+.user__Bio {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.user__link a {
+  font-weight: 500;
+}
+
+.post__counter {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #0d0d0d;
+  border-radius: 8px;
+}
+
+.post__counter h2 {
+  font-size: 1.2rem;
+}
+
+.post__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.post__img-box {
+  overflow: hidden;
+}
+
+.post__img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth zoom and fade */
+}
+
+.post__img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  opacity: 0.9;
+}

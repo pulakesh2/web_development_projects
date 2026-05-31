@@ -1,0 +1,27 @@
+.navigation__bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0d0d0d; /* Darker black for nav */
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav__icon {
+  font-size: 2rem;
+  color: #e0e0e0; /* Light icons */
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color */
+}
+
+.nav__icon:hover {
+  transform: scale(1.2); /* Slight scale-up on hover */
+  color: #00b4d8; /* Cyan accent on hover */
+}

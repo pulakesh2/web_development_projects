@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Social media feed featuring posts by Vanessa and others."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Social Feed | Vanessa's Posts</title>
+    <!-- Preconnect to improve font and CDN loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <!-- Consolidated CSS into a single minified file (assumed) -->
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="css/user.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/post.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Favicon for better branding -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <div class="content-box">
+        <!-- Post 1 -->
+        <article class="content">
+          <div class="content__image-box">
+            <img
+              class="content__image"
+              src="img/img1.png"
+              alt="Fashion model posing"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="content__post-box">
+            <p class="user__name">Vanessa 🦋</p>
+            <p class="user__post">One salmon bagel please</p>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="content">
+          <div class="content__image-box">
+            <img
+              class="content__image"
+              src="img/img.png"
+              alt="Fashion model in stylish outfit"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="content__post-box">
+            <p class="user__name">Vanessa 🦋</p>
+            <p class="user__post">One salmon bagel please</p>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="content">
+          <div class="content__image-box">
+            <img
+              class="content__image"
+              src="img/img2.png"
+              alt="Fashion model with accessories"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="content__post-box">
+            <p class="user__name">Vanessa 🦋</p>
+            <p class="user__post">One salmon bagel please</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation__bar" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="user.html" class="nav__icon" aria-label="Profile">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="nav__icon" aria-label="Home">
+            <ion-icon name="home-outline"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="post.html" class="nav__icon" aria-label="Create Post">
+            <ion-icon name="create-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Ionicon Scripts (async for performance) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      async
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      async
+    ></script>
+  </body>
+</html>

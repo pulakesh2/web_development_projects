@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #1a1a1a; /* Black theme background */
+  color: #e0e0e0; /* Light text for contrast */
+  line-height: 1.6;
+  transition: all 0.3s ease; /* Smooth transitions for body */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #00b4d8; /* Cyan accent for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #90e0ef; /* Lighter cyan on hover */
+}
