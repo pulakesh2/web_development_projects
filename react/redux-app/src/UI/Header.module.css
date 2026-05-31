@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #1e1e2f, #1a1a2e);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navList {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.navItem {
+  font-size: 1rem;
+  color: #e2e8f0;
+  transition: color 0.3s ease;
+}
+
+.navItem a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navItem a:hover {
+  color: #a855f7;
+  text-decoration: underline;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c084fc;
+  text-decoration: none;
+}
+
+.searchContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.accountLink {
+  font-weight: bold;
+  background: linear-gradient(to right, #9333ea, #6366f1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  transition: background 0.3s ease;
+}
+
+.accountLink:hover {
+  background: linear-gradient(to right, #7c3aed, #4f46e5);
+}

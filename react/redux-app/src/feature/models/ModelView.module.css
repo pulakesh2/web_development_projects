@@ -1,0 +1,153 @@
+/* .container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bio {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  color: #0ea5e9;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.gallery h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.imageGrid img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageGrid img:hover {
+  transform: scale(1.05);
+} */
+
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #1e293b;
+}
+
+.bio {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0ea5e9;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.links {
+  margin-bottom: 2rem;
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.links p {
+  margin: 0.5rem 0;
+}
+
+.links a {
+  color: #0ea5e9;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.imageGrid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.imageGrid img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #0ea5e9;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0284c7;
+}
+
+.backBtn {
+  /* font-size: 2rem; */
+}
