@@ -1,0 +1,17 @@
+.student__active {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+
+  &__head {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+
+  &__body {
+    font-size: 2rem;
+  }
+}

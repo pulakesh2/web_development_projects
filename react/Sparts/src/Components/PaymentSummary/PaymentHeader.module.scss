@@ -1,0 +1,15 @@
+.payment__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  &__para {
+    font-size: 1.4rem;
+  }
+}
+
+.download {
+  width: 30px;
+  cursor: pointer;
+}

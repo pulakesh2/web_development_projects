@@ -1,0 +1,31 @@
+.amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  //   color: #eee;
+
+  .amount__recieved__box,
+  .amount__pending__box {
+    text-align: center;
+  }
+
+  &__fees {
+    font-size: 1.8rem !important;
+    color: #000 !important;
+    font-weight: 600;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #aaa;
+  }
+}
+
+.log {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 3px;
+}

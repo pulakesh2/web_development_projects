@@ -1,0 +1,16 @@
+.bar__charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.charts {
+}
+
+@media (max-width: 27em) {
+  .bar__charts {
+    display: block;
+  }
+}

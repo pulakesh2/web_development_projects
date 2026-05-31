@@ -1,0 +1,41 @@
+.button__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+
+  &__btn {
+    border: none;
+    background: none;
+    padding: 1rem 3rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    background-color: #dee2e6;
+    color: #495057;
+  }
+}
+
+.btn__layout {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media (max-width: 27em) {
+  .button__box {
+    &__btn {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+}

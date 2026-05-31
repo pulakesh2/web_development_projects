@@ -1,0 +1,111 @@
+.logo,
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header {
+  padding: 0 4rem;
+  background-color: #f1f3f5;
+  list-style: none;
+}
+
+.user {
+  gap: 1.5rem;
+  &__img {
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    // user__details-->
+    &__name {
+      font-size: 1.8rem;
+    }
+
+    &__email {
+      font-size: 1.4rem;
+      color: #777;
+    }
+  }
+}
+
+.logo {
+  &__date {
+    font-size: 2rem;
+  }
+}
+
+.welcome {
+  &__msg {
+    font-size: 3.4rem;
+  }
+  &__summary {
+    font-size: 1.8rem;
+  }
+}
+
+.logo__log {
+  width: 10rem;
+}
+.logo__lmg {
+  width: 100% !important;
+}
+
+@media (max-width: 27em) {
+  .user {
+    gap: 1rem;
+    &__img {
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      // user__details-->
+      &__name {
+        font-size: 1.4rem;
+      }
+
+      &__email {
+        font-size: 1rem;
+        color: #777;
+      }
+    }
+  }
+
+  .logo {
+    &__date {
+      font-size: 1.4rem;
+    }
+  }
+
+  .welcome {
+    &__msg {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    &__summary {
+      font-size: 1.2rem;
+    }
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+}
