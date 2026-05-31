@@ -1,0 +1,13 @@
+.home__section {
+  width: 50%;
+  padding: 2rem;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 3rem auto;
+}
+
+.imdb__rating {
+  margin-bottom: 1rem;
+}

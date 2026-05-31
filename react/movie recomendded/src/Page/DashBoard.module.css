@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 30vh);
+  row-gap: 5vh;
+  position: relative;
+  /* grid-template-rows: ; */
+}
+
+.details {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.table__box {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  height: 30vh;
+  padding: 3rem;
+  position: relative;
+  overflow: scroll;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.matching {
+  position: absolute;
+  top: 65%;
+  left: 31.5%;
+}

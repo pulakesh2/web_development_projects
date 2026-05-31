@@ -1,0 +1,38 @@
+.img {
+  width: 100%;
+}
+.img__box {
+  overflow: hidden;
+}
+
+.details__box {
+  padding: 1rem;
+}
+
+.movie {
+  /* background-color: #212529; */
+  background-color: #343a40;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  background-color: #fa5252;
+  padding: 0.2rem 0.6rem;
+  display: inline-block;
+  transform: skewX(-12deg);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
