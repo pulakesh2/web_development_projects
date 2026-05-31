@@ -1,0 +1,20 @@
+ // const getData = async () => {
+  //   try {
+  //     // get the respond-->
+  //     const res = await axios.get(
+  //       `https://pixabay.com/api/?key=38344134-e376d0505cf9a4010c03b04a2&q=${data.userData}&image_type=photo`
+  //     );
+
+  //     // store only object in array state-->
+  //     setMyData(res.data.hits);
+  //   } catch (error) {
+  //     // return the error-->
+  //     console.log("ERROR");
+  //   }
+  // };
+
+
+  
+  // useEffect(() => {
+  //   getData();
+  // }, [userData]);

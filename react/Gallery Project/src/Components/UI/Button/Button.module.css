@@ -1,0 +1,18 @@
+.btn {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border: none;
+  background-color: #51cf66;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  transform: scale(1.1);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  background-color: #69db7c;
+}

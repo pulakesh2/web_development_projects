@@ -1,0 +1,35 @@
+.search__bar {
+  width: 100%;
+}
+
+.input__form {
+  width: 60%;
+  margin: 4rem auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.search__bar {
+  border: none;
+  border-radius: 9px;
+  padding: 0rem 2rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  background-color: #f1f3f5;
+  padding: 1rem 3rem;
+  border-radius: 9px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn:hover {
+  transform: scale(1.1) translateY(-5px);
+  background-color: #495057;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
