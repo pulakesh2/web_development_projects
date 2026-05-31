@@ -1,0 +1,73 @@
+body {
+  font-family: "Rubik", sans-serif;
+  /* background-color: #000; */
+  color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.container {
+  background-color: rgb(35, 27, 27);
+  height: 100vh;
+}
+.clock-box {
+  width: 30rem;
+  height: 30rem;
+  background-color: red;
+  border-radius: 50%;
+}
+.clock {
+  width: 20rem;
+  /* margin: 0 auto; */
+  height: 20rem;
+  background-color: orange;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.btn {
+  border: none;
+  background: none;
+  background-color: #c80000;
+  padding: 2rem 4rem;
+  border-radius: 100px;
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: red;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+.btn-box {
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+input {
+  width: 20rem;
+  height: 5vh;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  border-radius: 100px;
+  border: none;
+}

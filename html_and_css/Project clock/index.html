@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="clock timer"
+      content="this is the normal clock time where you can give some input and it will run for this time"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clock &rarr; The Clock Timer</title>
+    <link rel="stylesheet" href="page.css" />
+    <link rel="icon" href="clock.png" />
+  </head>
+  <body>
+    <section class="container flex flex-column">
+      <label for="time">Time In millisecond</label>
+      <input
+        type="text"
+        name="num"
+        id="time"
+        class="user-input"
+        placeholder="1000s"
+      />
+      <div class="clock-box flex">
+        <div class="clock flex">get Started</div>
+      </div>
+      <div class="btn-box flex">
+        <button class="btn btn-start">Start</button>
+        <button class="btn btn-stop">Stop</button>
+      </div>
+    </section>
+  </body>
+  <script src="page.js"></script>
+</html>

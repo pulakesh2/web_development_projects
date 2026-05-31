@@ -1,0 +1,32 @@
+@media (max-width: 56.25em) {
+  .calculator {
+    width: 60rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .calculator {
+    width: 45rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .calculator {
+    width: 35rem;
+  }
+  .html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 25em) {
+  .calculator {
+    width: 32rem;
+  }
+} ;

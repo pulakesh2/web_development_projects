@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.layout-blue-print {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.layout {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+header {
+  background-color: rgb(29, 29, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+header nav a {
+  color: rgb(216, 215, 215);
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 200;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.offer {
+  font-size: 14px;
+  text-align: center;
+  background-color: #e8e8e8;
+  padding: 14px 0;
+}
+.offer p a {
+  text-decoration: none;
+}
+.first_layout {
+  position: relative;
+  height: 590px;
+}
+.details {
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  z-index: 10;
+  top: 200px;
+  left: 220px;
+
+  gap: 15px;
+}
+.macbookair {
+  position: absolute;
+  height: auto;
+  width: 883px;
+  right: 75px;
+  top: 30px;
+}
+.first_layout .details h1 {
+  font-size: 50px;
+}
+.first_layout .details h2 {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.first_layout .details p {
+  color: #888;
+  font-size: 20px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.first_layout .details .link a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.macbookpro h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.macbookpro h2 {
+  font-weight: 400;
+  color: #fff;
+}
+.second_layout .macbookpro p {
+  color: #888;
+  font-size: 20px;
+}
+.macbookpro {
+  gap: 20px;
+}
+.second_layout {
+  background-color: #000;
+
+  padding: 50px 0;
+}
+.third_layout {
+  gap: 20px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+}
+.third_layout .macbookpro h1,
+.third_layout .macbookpro h2 {
+  color: #000;
+}
+.aside {
+  background-color: #eaeff2;
+  width: 49.5vw;
+  height: 450px;
+  padding: 20px;
+  margin: 15px 0;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.aside .macbookpro h1 {
+  color: #000;
+}
+footer {
+  padding: 20px 160px;
+  font-size: 13px;
+  color: #888;
+  gap: 15px;
+}
+.list_items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 90px;
+}
+.list_items ul li h3 {
+  color: #000;
+}
+.author {
+  text-align: center;
+}
