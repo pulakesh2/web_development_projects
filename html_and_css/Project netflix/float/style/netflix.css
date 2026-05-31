@@ -1,0 +1,272 @@
+body {
+  font-family: sans-serif;
+  background-color: #303030;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.first_layout {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  height: 650px;
+  margin-bottom: 10px;
+}
+header {
+  position: relative;
+}
+.netflixlogo {
+  margin-left: 60px;
+}
+
+.world {
+  position: absolute;
+  right: 170px;
+  top: 18px;
+  font-size: 15px;
+  padding: 4px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 6%;
+}
+.login {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  background-color: #e50914;
+  font-size: 15px;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 6%;
+  border: 0;
+  cursor: pointer;
+}
+
+/* *******************building main page*********************** */
+.first_layout article {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.first_layout article h1 {
+  font-size: 50px;
+  width: 600px;
+  margin-left: 320px;
+  margin-top: 160px;
+}
+.first_layout article h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.first_layout article p {
+  font-size: 20px;
+  margin-top: 25px;
+}
+#email {
+  height: 50px;
+  width: 460px;
+  position: absolute;
+  right: 495px;
+  top: 235px;
+  padding: 0 20px;
+  font-size: 15px;
+  border: 0;
+}
+.get_started {
+  position: absolute;
+  height: 52px;
+  width: 200px;
+  background-color: #e50914;
+  font-size: 25px;
+  color: #fff;
+  right: 295px;
+  top: 234px;
+  border: 0;
+}
+/* ******************************building Second Layout**************** */
+.second_layout {
+  background-color: #000;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+.second_layout article {
+  float: left;
+  margin-left: 110px;
+  margin-top: 140px;
+  color: #fff;
+}
+.img2nd {
+  float: right;
+  margin-right: 160px;
+  margin-top: 80px;
+}
+.second_layout article h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.second_layout article p {
+  font-size: 25px;
+  width: 500px;
+}
+.second_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ***************building 3rd layout************************* */
+.third_layout {
+  background-color: #000;
+  padding-bottom: 60px;
+  margin-bottom: 10px;
+}
+.third_layout article {
+  float: right;
+  color: #fff;
+  margin-right: 50px;
+  margin-top: 110px;
+}
+.third_layout img {
+  float: left;
+  margin-left: 115px;
+  margin-top: 85px;
+}
+.third_layout article h1 {
+  font-size: 50px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.third_layout article p {
+  font-size: 25px;
+  width: 600px;
+}
+.third_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* **************building 4rth layout****************** */
+.fourth_layout {
+  background-color: #000;
+  padding-bottom: 60px;
+  margin-bottom: 10px;
+}
+
+.fourth_layout article {
+  float: left;
+  margin-left: 110px;
+  margin-top: 140px;
+  color: #fff;
+}
+.fourth_layout img {
+  float: right;
+  margin-right: 160px;
+  margin-top: 55px;
+}
+.fourth_layout article h1 {
+  font-size: 50px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.fourth_layout article p {
+  font-size: 25px;
+  width: 500px;
+}
+
+.fourth_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ****************************building 5th layout******************** */
+.fifth_layout {
+  background-color: #000;
+  padding-bottom: 80px;
+  margin-bottom: 10px;
+}
+
+.fifth_layout img {
+  float: left;
+  margin-left: 115px;
+  margin-top: 85px;
+}
+
+.fifth_layout article {
+  float: right;
+  color: #fff;
+  margin-right: 50px;
+  margin-top: 110px;
+}
+.fifth_layout article h1 {
+  font-size: 50px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.fifth_layout article p {
+  font-size: 25px;
+  width: 600px;
+}
+.fifth_layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* *****************building 6th layout****************** */
+.sixth_layout {
+  color: #fff;
+  background-color: #000;
+  padding-bottom: 100px;
+}
+
+.sixth_layout h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+}
+.sixth_layout p {
+  margin-left: 234px;
+  font-size: 25px;
+  background-color: #303030;
+  padding: 20px 40px;
+  margin-bottom: 10px;
+  width: 730px;
+}
+.sixth_layout article {
+  position: relative;
+}
+.sixth_layout article p {
+  font-size: 20px;
+  margin-top: 25px;
+  background-color: #000;
+  margin-left: 275px;
+}
+
+#emails {
+  height: 50px;
+  width: 460px;
+  position: absolute;
+  right: 495px;
+  padding: 0 20px;
+  font-size: 15px;
+  border: 0;
+}
+.gets_started {
+  position: absolute;
+  height: 52px;
+  width: 200px;
+  background-color: #e50914;
+  font-size: 25px;
+  color: #fff;
+  right: 295px;
+  border: 0;
+}
