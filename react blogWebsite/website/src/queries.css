@@ -1,0 +1,11 @@
+@media (max-width: 66.635em) {
+  .power__container {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 57.8125em) {
+  .power__container {
+    width: 10rem;
+  }
+}

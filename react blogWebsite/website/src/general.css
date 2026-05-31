@@ -1,0 +1,38 @@
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 61.25em) {
+  .hero__section--intro {
+    font-size: 2rem;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 45.62em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 34.375em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 26.875em) {
+  html {
+    font-size: 30%;
+  }
+}
