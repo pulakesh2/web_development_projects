@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/products.css" />
+    <link rel="stylesheet" href="../static/general.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>products</title>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <form class="space_container" action="/products" method="POST">
+        <input
+          class="user_input"
+          type="text"
+          name="user_input"
+          placeholder="search by product name/category"
+        />
+        <button type="submit" class="submit">submit</button>
+      </form>
+
+      <ul class="nav_link">
+        <li><a href="{{url_for('home')}}">home</a></li>
+        {% if session.get('customer_id') != 5 %}
+        <li><a href="{{url_for('cart')}}">cart</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    <div class="container">
+      {% if session.get('customer_id') == 5 %}
+      <div class="hero">
+        <p>this are the products we have in our stock.</p>
+      </div>
+      {% else %}
+      <div class="hero">
+        <p>This are the products we have, you can shop anything you want</p>
+      </div>
+      {% endif %}
+
+      <div class="empty_container">
+        <!-- if data is empty -->
+        {% if not data %}
+        <p class="empty_msg">
+          we are sorry, we don't have the products right now...
+        </p>
+        {% endif %}
+      </div>
+
+      <div class="container_products">
+        <!-- for loop -->
+        {% for product in data %}
+        <div class="product_card">
+          <p>product name : <span>{{product[1]}}</span></p>
+          <p>product quantity: <span>{{product[2]}}</span></p>
+          <p>category: <span>{{product[4]}}</span></p>
+          <p>product price: <span>{{product[3]}}</span></p>
+          {% if session.get('customer_id') == 5 %}
+          <a
+            href="{{url_for('edit_product', product_id = product[0])}}"
+            class="btn"
+            >edit</a
+          >
+          {% else %}
+          <form action="{{url_for('add_to_cart')}}" method="POST">
+            <p class="quantity_p">quantity you want:</p>
+            <input class="quantity" type="text" name="quantity" value="1" />
+
+            <input type="hidden" name="product_id" value="{{ product[0] }}" />
+            <button type="submit">buy this product 🛒</button>
+          </form>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+      {% if session.get('customer_id') == 5 %}
+      <p class="tertiary_header">
+        to add products, <a href="{{url_for('add_items')}}">click here</a>. if
+        want to logout, <a href="{{url_for('log_out')}}">click here</a>
+      </p>
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/general.css" />
+    <title>add items</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="secondary_header">
+        this is the admin page, admin can add products to the list
+      </p>
+
+      <form class="form" action="" method="POST">
+        <div>
+          <label for="product_name">product name: </label>
+          <input type="text" name="product_name" id="product_name" />
+        </div>
+
+        <div>
+          <label for="quantity">quantity: </label>
+          <input type="number" name="quantity" id="quantity" />
+        </div>
+
+        <div>
+          <label for="price">price: </label>
+          <input type="number" name="price" id="price" />
+        </div>
+
+        <div>
+          <label for="category">category: </label>
+          <input type="text" name="category" id="category" />
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+
+    <p class="tertiary_header">
+      To see the products, <a href="{{url_for('products')}}">click here</a>
+    </p>
+  </body>
+</html>

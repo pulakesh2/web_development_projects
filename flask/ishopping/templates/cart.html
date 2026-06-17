@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/general.css" />
+    <link rel="stylesheet" href="../static/cart.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="secondary_header">your account details:</p>
+      <div class="customer_details">
+        <p class="">customer first name: {{customer_data[1]}}</p>
+        <p class="">customer last name: {{customer_data[2]}}</p>
+        <p class="">customer date of birth: {{customer_data[3]}}</p>
+        <p class="">customer register mobile number: {{customer_data[4]}}</p>
+        <p class="">customer email: {{customer_data[5]}}</p>
+        <p class="">customer password: {{customer_data[6]}}</p>
+      </div>
+
+      <p class="secondary_header">your purchased items:</p>
+
+      <div class="product_purchase">
+        <table class="cart_table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+              <th>action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for order in order_data %}
+            <tr>
+              <td>{{ order[0] }}</td>
+              <td>{{ order[1] }}₹</td>
+              <td>{{ order[2] }}</td>
+              <td>{{ order[3] }}₹</td>
+              <td>
+                <a href="{{url_for('remove_order', order_id = order[4])}}"
+                  >remove</a
+                >
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <p class="tertiary_header">
+        done with your shopping then,
+        <a href="{{url_for('buy')}}">buy it</a>
+      </p>
+
+      <p class="tertiary_header">
+        for more shopping, <a href="{{url_for('products')}}">click here</a>. if
+        you want to log out, <a href="{{url_for('log_out')}}">click here</a>.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/general.css" />
+    <link rel="stylesheet" href="../static/home.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <div class="hero_section">
+      <h2 class="primary_header">Welcome to iShopping app.</h2>
+      <p class="secondary_header">
+        This is your online shopping app. you can buy anything you want.
+      </p>
+      <p class="tertiary_header">
+        {% if session.get('customer_id') %} To buy,
+        <a href="{{url_for('products')}}">click here</a> {% else %} To register,
+        <a href="{{url_for('register')}}">register here</a>
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="card_section">
+      {% for i in range(1,7) %}
+      <div class="card">
+        <div class="card_num">0{{ i }}</div>
+        <div class="image_container">
+          <div class="badge">
+            {{ ['Trending','Sale','New','Best','Limited','Top Pick'][i-1] }}
+          </div>
+          <img
+            class="image"
+            src="{{ url_for('static', filename='images/' ~ i ~ '.jpg') }}"
+            alt=""
+          />
+          <div class="hover_label"></div>
+        </div>
+        <p class="description"></p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <script>
+      const messages = [
+        { text: "Hot Deal! Grab it before it's gone!", badge: "Trending" },
+        { text: "Add to cart now and save big!", badge: "Sale" },
+        { text: "New Arrival — Be first to own it!", badge: "New" },
+        { text: "Best Price Guaranteed!", badge: "Best" },
+        { text: "Limited Stock — Order today!", badge: "Limited" },
+        { text: "Top Rated by our customers!", badge: "Top Pick" },
+      ];
+
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach((card, index) => {
+        const desc = card.querySelector(".description");
+        const hoverLabel = card.querySelector(".hover_label");
+        desc.textContent = messages[index % messages.length].text;
+        hoverLabel.textContent = messages[index % messages.length].text;
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            } else {
+              entry.target.classList.remove("show");
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      cards.forEach((card) => observer.observe(card));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/general.css" />
+    <link rel="stylesheet" href="../static/buy.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="secondary_header">
+        your total purchase price is {{total_price[0]}}
+      </p>
+      <div class="check_box">
+        <input type="checkbox" name="check" id="check" />
+        <p class="tertiary_header">are you agree to pay the bill</p>
+      </div>
+
+      <div class="buy_btn">
+        <a class="buy" href="instagram.com">buy</a>
+        <a class="cancel" href="{{url_for('cart')}}">cancel</a>
+      </div>
+    </div>
+  </body>
+</html>

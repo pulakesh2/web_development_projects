@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/general.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="primary_header">here you can edit your products</p>
+      <form action="" class="form" method="POST">
+        <div>
+          <label for="product_name">product name: </label>
+          <input
+            type="text"
+            name="product_name"
+            value="{{product_data[1]}}"
+            id="product_name"
+          />
+        </div>
+
+        <div>
+          <label for="quantity">quantity: </label>
+          <input
+            type="number"
+            value="{{product_data[2]}}"
+            name="quantity"
+            id="quantity"
+          />
+        </div>
+
+        <div>
+          <label for="price">price: </label>
+          <input
+            type="number"
+            value="{{product_data[3]}}"
+            name="price"
+            id="price"
+          />
+        </div>
+
+        <div>
+          <label for="category">category: </label>
+          <input
+            type="text"
+            value="{{product_data[4]}}"
+            name="category"
+            id="category"
+          />
+        </div>
+        <button type="submit">edit</button>
+      </form>
+
+      <p class="tertiary_header">
+        want to see products, <a href="{{url_for('products')}}">click here</a>.
+      </p>
+    </div>
+  </body>
+</html>
