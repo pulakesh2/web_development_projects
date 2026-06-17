@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.hero {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.primary_header {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.secondary_header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.tertiary_header {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.form {
+  background-color: #eee;
+  font-size: 1.4rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 100px;
+}

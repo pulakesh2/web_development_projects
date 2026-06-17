@@ -1,0 +1,26 @@
+.customer_details {
+  background: #eee;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 9px;
+}
+
+.customer_details p {
+  font-size: 1.6rem;
+}
+
+.product_purchase {
+}
+
+.cart_table {
+  font-size: 1.4rem;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.cart_table th,
+.cart_table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
